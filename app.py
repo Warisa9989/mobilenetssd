@@ -155,7 +155,7 @@ def event_handle(event):
             replyObj = TextSendMessage(text="อยากได้ข่าวเเบบไหนคะ")
             line_bot_api.reply_message(rtoken, replyObj)
         elif msg == "ข่าวที่มาเเรงในตอนนี้":                          
-            replyObj = TextSendMessage(text="โอเครค่ะ")
+            replyObj = TextSendMessage(text="โอเครค่ะ https://www.sanook.com/news/8526842/")
             line_bot_api.reply_message(rtoken, replyObj)
         else : 
             replyObj = TextSendMessage(text="https://www.sanook.com/news/8526842/ ")
