@@ -148,14 +148,14 @@ def event_handle(event):
 
     if msgType == "text":
         msg = str(event["message"]["text"])
-        if msg == "ทำอะไร":
-            replyObj = TextSendMessage(text="นอน")
+        if msg == "สวัสดีค่ะ":
+            replyObj = TextSendMessage(text="สวัสดีค่ะ ยินดีต้อนรับ เมาท์ข่าวด่วนจึ๋ง")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เล่นเกมไหม": 
-            replyObj = TextSendMessage(text="เล่น")
+        elif msg == "สนใจอ่านข่าวค่ะ": 
+            replyObj = TextSendMessage(text="อยากได้ข่าวเเบบไหนคะ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "เข้าเกม":                          
-            replyObj = TextSendMessage(text="โอเคร")
+        elif msg == "ข่าวที่มาเเรงในตอนนี้":                          
+            replyObj = TextSendMessage(text="โอเครค่ะ")
             line_bot_api.reply_message(rtoken, replyObj)
         else : 
             replyObj = TextSendMessage(text=" ไม่รู้ไม่ชี้")
