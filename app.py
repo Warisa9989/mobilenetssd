@@ -158,7 +158,7 @@ def event_handle(event):
             replyObj = TextSendMessage(text="โอเครค่ะ")
             line_bot_api.reply_message(rtoken, replyObj)
         else : 
-            replyObj = TextSendMessage(text=" ไม่รู้ไม่ชี้")
+            replyObj = TextSendMessage(text="https://www.sanook.com/news/8526842/ ")
             line_bot_api.reply_message(rtoken, replyObj)
     elif msgType == "image":
         try:
